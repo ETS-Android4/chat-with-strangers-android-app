@@ -1,0 +1,4 @@
+#Sun May 20 17:19:06 EEST 2018
+base.0=/home/vv/Desktop/Software/apps/talk-to-a-stranger/talktostrangers/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/home/vv/Desktop/Software/apps/talk-to-a-stranger/talktostrangers/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
