@@ -11,7 +11,10 @@ server.listen(process.env.PORT || PORT);
 
 io.on('connection', function (socket) {
 	strangers[socket.id] = { recipient: null };
-	socket.emit('message', { class: 'notification', text: 'Searching for a stranger...' });
+	socket.emit('message', {
+		class: 'notification',
+		text: 'Welcome! ' + Object.keys(strangers) + ' strangers are currently using this app. Searching for a stranger...'
+	});
   // socket.emit('message', { class: 'msg-stranger', text: 'Test message from stranger' });
 	socket.on('message', function(data) {
 		if (strangers[socket.id].recipient === null) return;
